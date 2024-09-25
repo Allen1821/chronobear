@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Bot Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="time.js" defer></script> 
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div style="max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; align-items: center;">
+                <img src="images/Chronobear.png" alt="Time Bot Logo" style="width: 40px; height: 40px; margin-right: 10px;">
+                <h1 style="margin: 0; font-size: 24px;">Chronobear</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="commands.html">Commands</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="status.html">Status</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="text-container">
+            <h2 class="main-heading">Track Your Time with Precision</h2>
+            <p>Chronobear is your ultimate solution for tracking time in voice channels, helping you keep track of every second effortlessly.</p>
+            <!-- Invite button that behaves like a link -->
+            <button class="invite-button" onclick="window.location.href='https://discord.com/oauth2/authorize?client_id=1216298465064255618&permissions=8&integration_type=0&scope=bot+applications.commands'">Invite Time Bot</button>
+        </div>
+
+        <!-- Replacing the image with the Statistics Section -->
+        <section class="statistics">
+            <div class="stat-item">
+                <h3>Servers</h3>
+                <p id="servers">Loading...</p>
+            </div>
+            <div class="stat-item">
+                <h3>Users</h3>
+                <p id="users">Loading...</p>
+            </div>
+            <div class="stat-item">
+                <h3>Commands</h3>
+                <p id="commands">14</p>
+            </div>
+        </section>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <!-- Feature Item 1 -->
+        <div class="feature-item">
+            <div class="feature-text">
+                <h2>Precise Voice Channel Time Tracking</h2>
+                <ul>
+                    <li>Track your time spent in voice channels with detailed breakdowns by hours, minutes, and seconds.</li>
+                    <li>Quickly check your ongoing session time or total time since joining the server.</li>
+                    <li>Use both slash commands and traditional prefix commands for flexibility.</li>
+                    <li>Receive cooldown notifications to prevent command spamming.</li>
+                </ul>
+            </div>
+            <div class="feature-image">
+                <img src="images/feature1.png" alt="Feature 1 Preview">
+            </div>
+        </div>
+
+        <!-- Feature Item 2 -->
+        <div class="feature-item">
+            <div class="feature-text">
+                <h2>Customizable Leaderboard and Server Goals</h2>
+                <ul>
+                    <li>Set up and customize leaderboards to track top users based on voice channel activity.</li>
+                    <li>Adjust the size of the leaderboard to suit your server's needs.</li>
+                    <li>Set daily, weekly, and monthly server activity goals to motivate your community.</li>
+                    <li>Automated updates keep your server informed about progress toward these goals.</li>
+                </ul>
+            </div>
+            <div class="feature-image">
+                <img src="images/feature2.png" alt="Feature 2 Preview">
+            </div>
+        </div>
+
+        <!-- Feature Item 3 -->
+        <div class="feature-item">
+            <div class="feature-text">
+                <h2>Dynamic Server Activity Graphs</h2>
+                <ul>
+                    <li>Visualize real-time user statistics with cool graphs.</li>
+                    <li>Track server goals such as daily, weekly, or monthly engagement automatically.</li>
+                    <li>Graphs update regularly to reflect the most accurate server participation metrics.</li>
+                    <li>Visual reports to help DISCORD MODS TO VIEW server activity trends.</li>
+                </ul>
+            </div>
+            <div class="feature-image">
+                <img src="images/feature3.png" alt="Feature 3 Preview">
+            </div>
+        </div>
+        </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Chronobear. All rights reserved.</p>
+    </footer>
+</body>
+</html>
