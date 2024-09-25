@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    background-color: #1e1e1e; /* Slightly darker gray background */
+    color: #dcdcdc; /* Light gray text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #2b2b2b; /* Dark gray background for the nav bar */
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: #dcdcdc; /* Light gray text */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color: #505050; /* Darker gray hover effect */
+    border-radius: 5px;
+}
+
+/* Commands Section */
+.commands-section {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #2a2a2a; /* Medium-dark gray background */
+    border-radius: 10px;
+    text-align: left;
+}
+
+.commands-section h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #dcdcdc; /* Light gray text */
+}
+
+/* Command Item */
+.command-item {
+    background-color: #3a3a3a; /* Darker gray background for command items */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    transition: transform 0.5s ease, border-color 0.3s ease, color 0.3s ease;
+    opacity: 0; /* Start with invisible items */
+    transform: translateY(100px); /* Start lower to create the jump effect */
+}
+
+.command-item.visible {
+    opacity: 1;
+    transform: translateY(0); /* Jump to the original position */
+}
+
+.command-item:hover {
+    border-color: #C8B5B7; /* Updated hover border color */
+    color: #C8B5B7; /* Updated hover text color */
+}
+
+.command-name {
+    font-size: 22px;
+    color: #C8B5B7; /* Updated light pinkish color for command names */
+    margin-bottom: 5px;
+}
+
+.command-description {
+    font-size: 18px;
+    color: #bbbbbb; /* Medium-light gray text for descriptions */
+    margin-bottom: 10px;
+}
+
+.command-permissions {
+    font-size: 16px;
+    color: #aaaaaa; /* Medium gray text for permissions */
+}
+
+.command-permissions span {
+    background-color: #5a5a5a; /* Darker gray background for permission badges */
+    padding: 3px 8px;
+    border-radius: 5px;
+    color: #C8B5B7; /* Updated badge text color to match the scheme */
+}
+
+/* Footer */
+footer {
+    background-color: #2b2b2b; /* Dark gray background for footer */
+    padding: 20px;
+    text-align: center;
+    color: #bbbbbb; /* Medium-light gray text */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

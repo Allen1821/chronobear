@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    background-color: #2a2a2a; /* Keep the original background color */
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Statistics Section */
+.statistics {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #343434; /* Keep original background */
+    border-radius: 20px; /* Rounded corners */
+}
+
+.stat-item {
+    background-color: #343434; /* Original color */
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners */
+    width: 30%;
+}
+
+.stat-item h3 {
+    font-size: 24px;
+    color: #e0e0e0;
+}
+
+.stat-item p {
+    font-size: 32px;
+    color: #e0e0e0;
+    margin: 10px 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #3c3c3c; /* Keep original nav bar color */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: #e0e0e0; /* Light gray text */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color: #5a5a5a; /* Keep original hover effect */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #2a2a2a; /* Keep original background color */
+    border-radius: 20px; /* Rounded corners */
+}
+
+.hero-section .text-container {
+    max-width: 600px;
+}
+
+.hero-section h2.main-heading {
+    font-size: 64px; /* Increased font size to make it pop */
+    margin-bottom: 20px;
+    color: #ffffff; /* Lighter gray for better contrast */
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #e0e0e0; /* Light gray text */
+}
+
+.hero-section img {
+    max-width: 100%;
+}
+
+/* Invite Button */
+button.invite-button {
+    background-color: #5a5a5a; /* Darker gray background */
+    color: #e0e0e0; /* Light gray text */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.invite-button:hover {
+    background-color: #737373; /* Slightly lighter gray on hover */
+}
+
+/* Features Section */
+#features {
+    background-color: #343434; /* Original background color */
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between feature items */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the features section */
+    border-radius: 20px; /* Rounded corners */
+}
+
+.feature-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px; /* Gap between text and image */
+    border: 2px solid #5a5a5a; /* Darker gray border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px;
+    background-color: #2a2a2a; /* Slightly darker original background */
+    max-width: 100%;
+}
+
+.feature-item:nth-child(even) {
+    flex-direction: row-reverse; /* Reverse the order for even items */
+}
+
+.feature-text, .feature-image {
+    flex: 1; /* Ensure both text and image take up equal space */
+}
+
+.feature-image {
+    max-width: 45%; /* Limit image width to prevent it from dominating the layout */
+}
+
+.feature-image img {
+    width: 100%;
+    border-radius: 20px; /* Rounded corners for images */
+}
+
+.feature-text {
+    max-width: 45%; /* Limit text width for consistency */
+    color: #e0e0e0; /* Light gray text */
+}
+
+/* Footer */
+footer {
+    background-color: #3c3c3c; /* Keep original footer color */
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px; /* Rounded corners */
+    color: #bbbbbb; /* Medium-light gray text */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
