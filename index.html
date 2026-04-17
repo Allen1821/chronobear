@@ -3,110 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Bot Dashboard</title>
+    <title>Chronobear</title>
+    <link rel="icon" href="images/Chronobear.png">
     <link rel="stylesheet" href="styles.css">
-    <script src="time.js" defer></script> 
 </head>
 <body>
-
-    <!-- Navigation Bar -->
-    <nav>
-        <div style="max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center;">
-            <div style="display: flex; align-items: center;">
-                <img src="images/Chronobear.png" alt="Time Bot Logo" style="width: 40px; height: 40px; margin-right: 10px;">
-                <h1 style="margin: 0; font-size: 24px;">Chronobear</h1>
-            </div>
+    <header class="site-header">
+        <nav class="nav-shell" aria-label="Main navigation">
+            <a class="brand" href="index.html">
+                <img src="images/Chronobear.png" alt="Chronobear logo">
+                <span>Chronobear</span>
+            </a>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="commands.html">Commands</a></li>
                 <li><a href="support.html">Support</a></li>
                 <li><a href="status.html">Status</a></li>
                 <li><a href="aboutme.html">About Me</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="text-container">
-            <h2 class="main-heading">Track Your Time with Precision</h2>
-            <p>Chronobear is your ultimate solution for tracking time in voice channels, helping you keep track of every second effortlessly.</p>
-            <!-- Invite button that behaves like a link -->
-            <button class="invite-button" onclick="window.location.href='https://discord.com/oauth2/authorize?client_id=1216298465064255618&permissions=8&integration_type=0&scope=bot+applications.commands'">Invite Time Bot</button>
-        </div>
-
-        <!-- Replacing the image with the Statistics Section -->
-        <section class="statistics">
-            <div class="stat-item">
-                <h3>Servers</h3>
-                <p id="servers">Loading...</p>
+    <main>
+        <section class="hero-section">
+            <div class="hero-copy">
+                <p class="eyebrow">Discord voice time, tracked</p>
+                <h1>Chronobear</h1>
+                <p class="hero-lede">Track current voice sessions, lifetime totals, daily streaks, XP, levels, leaderboards, notifications, and analytics.</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="https://discord.com/oauth2/authorize?client_id=1216298465064255618&permissions=84992&integration_type=0&scope=bot+applications.commands">Invite Chronobear</a>
+                    <a class="button secondary" href="commands.html">View commands</a>
+                </div>
             </div>
-            <div class="stat-item">
-                <h3>Users</h3>
-                <p id="users">Loading...</p>
-            </div>
-            <div class="stat-item">
-                <h3>Commands</h3>
-                <p id="commands">14</p>
+            <div class="hero-art" aria-hidden="true">
+                <img src="images/Chronobear.png" alt="">
             </div>
         </section>
-    </section>
 
-    <!-- Features Section -->
-    <section id="features">
-        <!-- Feature Item 1 -->
-        <div class="feature-item">
-            <div class="feature-text">
-                <h2>Precise Voice Channel Time Tracking</h2>
-                <ul>
-                    <li>Track your time spent in voice channels with detailed breakdowns by hours, minutes, and seconds.</li>
-                    <li>Quickly check your ongoing session time or total time since joining the server.</li>
-                    <li>Use both slash commands and traditional prefix commands for flexibility.</li>
-                    <li>Receive cooldown notifications to prevent command spamming.</li>
-                </ul>
+        <section class="metrics" aria-label="Chronobear facts">
+            <div>
+                <span>19</span>
+                <p>Slash commands</p>
             </div>
-            <div class="feature-image">
-                <img src="images/feature1.png" alt="Feature 1 Preview">
-            </div>  
-        </div>
-
-        <!-- Feature Item 2 -->
-        <div class="feature-item">
-            <div class="feature-text">
-                <h2>Customizable Leaderboard and Server Goals</h2>
-                <ul>
-                    <li>Set up and customize leaderboards to track top users based on voice channel activity.</li>
-                    <li>Adjust the size of the leaderboard to suit your server's needs.</li>
-                    <li>Set daily, weekly, and monthly server activity goals to motivate your community.</li>
-                    <li>Automated updates keep your server informed about progress toward these goals.</li>
-                </ul>
+            <div>
+                <span>Streaks</span>
+                <p>Daily activity momentum</p>
             </div>
-            <div class="feature-image">
-                <img src="images/feature2.png" alt="Feature 2 Preview">
+            <div>
+                <span>Boards</span>
+                <p>Auto-updating rankings</p>
             </div>
-        </div>
-
-        <!-- Feature Item 3 -->
-        <div class="feature-item">
-            <div class="feature-text">
-                <h2>Dynamic Server Activity Graphs</h2>
-                <ul>
-                    <li>Visualize real-time user statistics with cool graphs.</li>
-                    <li>Track server goals such as daily, weekly, or monthly engagement automatically.</li>
-                    <li>Graphs update regularly to reflect the most accurate server participation metrics.</li>
-                    <li>Visual reports to help DISCORD MODS TO VIEW server activity trends.</li>
-                </ul>
-            </div>
-            <div class="feature-image">
-                <img src="images/feature3.png" alt="Feature 3 Preview">
-            </div>
-        </div>
         </section>
 
+        <section class="feature-band persistence">
+            <div class="section-copy">
+                <p class="eyebrow">Voice records</p>
+                <h2>Current sessions and totals stay easy to check.</h2>
+                <p>Chronobear keeps the everyday voice commands focused: current session, lifetime total, channel totals, and member totals.</p>
+            </div>
+            <dl class="detail-list">
+                <div>
+                    <dt>/time</dt>
+                    <dd>Shows your current voice session.</dd>
+                </div>
+                <div>
+                    <dt>/totaltime</dt>
+                    <dd>Shows your lifetime voice total.</dd>
+                </div>
+                <div>
+                    <dt>/usertotaltime</dt>
+                    <dd>Checks another member's total time.</dd>
+                </div>
+            </dl>
+        </section>
 
-    <!-- Footer -->
+        <section class="feature-band progress">
+            <div class="section-copy">
+                <p class="eyebrow">Daily momentum</p>
+                <h2>Streaks, XP, and levels keep voice activity visible.</h2>
+                <p>Members can check streaks and levels while moderators can tune streak behavior for the Discord server.</p>
+            </div>
+            <div class="progress-lanes" aria-label="Progress features">
+                <span>Daily streaks</span>
+                <span>XP levels</span>
+                <span>Streak board</span>
+                <span>Member rank</span>
+            </div>
+        </section>
+
+        <section class="feature-band automation">
+            <div class="section-copy">
+                <p class="eyebrow">Server operations</p>
+                <h2>Leaderboards and reminders update without manual cleanup.</h2>
+                <p>Chronobear supports longest voice session leaderboards, auto-updating leaderboard posts, configurable sizes, notifications, and analytics.</p>
+            </div>
+            <ul class="automation-list">
+                <li>Longest VC session leaderboards</li>
+                <li>Auto-updating leaderboard messages</li>
+                <li>Notification preferences</li>
+                <li>Analytics commands</li>
+            </ul>
+        </section>
+
+        <section class="final-cta">
+            <p class="eyebrow">Ready for your server</p>
+            <h2>Bring Chronobear into your Discord.</h2>
+            <a class="button primary" href="https://discord.com/oauth2/authorize?client_id=1216298465064255618&permissions=84992&integration_type=0&scope=bot+applications.commands">Invite Chronobear</a>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2024 Chronobear. All rights reserved.</p>
+        <p>&copy; 2026 Chronobear. All rights reserved.</p>
     </footer>
 </body>
 </html>

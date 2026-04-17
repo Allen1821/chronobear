@@ -1,35 +1,36 @@
 # Chronobear Website
 
-**[Chronobear](https://allen1821.github.io/chronobear/index.html)** is a bot designed to track and display detailed voice channel activity, helping Discord server users monitor their time spent in voice channels. The website serves as a user-friendly dashboard for bot interaction, command exploration, and bot status monitoring.
+**[Chronobear](https://allen1821.github.io/chronobear/index.html)** is a Discord bot for tracking voice channel activity. It records current sessions and lifetime totals, and provides streaks, XP levels, leaderboards, notifications, and analytics.
 
-## Features
+## Current Bot Features
 
-- **Voice Channel Time Tracking**: Track your time spent in voice channels with detailed breakdowns.
-- **Customizable Leaderboard**: View top users based on voice activity, with the option to adjust leaderboard size.
-- **Server Activity Goals**: Set daily, weekly, and monthly voice channel activity goals for your server.
-- **Moderation Tools**: Adjust or clear voice channel times, set up channels for tracking, and more.
+- **Voice Session Tracking**: Check your current voice session with `/time` and lifetime totals with `/totaltime`.
+- **Channel and User Totals**: Review current-channel totals with `/timec` and `/totaltimec`, or check a member with `/usertotaltime`.
+- **Progress Systems**: Track daily streaks, XP, levels, and streak leaderboards.
+- **Leaderboards**: Configure longest VC session leaderboards, auto-update leaderboard messages, and adjust leaderboard size.
+- **Notifications**: View and configure notification behavior for voice activity updates.
+- **Analytics**: Use `/analytics` for server voice activity summaries.
+
+## Commands
+
+Chronobear currently exposes 19 slash commands:
+
+`/time`, `/totaltime`, `/timec`, `/totaltimec`, `/usertotaltime`, `/streak`, `/level`, `/leaderboard`, `/streakboard`, `/notifications`, `/setnotifications`, `/config-streak`, `/setleaderboard`, `/updateleaderboard`, `/removeleaderboard`, `/leaderboardstatus`, `/setleaderboardsize`, `/analytics`, and `/help`.
 
 ## Website Sections
 
-1. **[Home](https://allen1821.github.io/chronobear/index.html)**: Introduction to the bot and key features.
-2. **[Commands](https://allen1821.github.io/chronobear/commands.html)**: Full list of bot commands with explanations and required permissions.
-3. **[Support](https://allen1821.github.io/chronobear/support.html)**: Reach out for assistance and view frequently asked questions.
-4. **[Status](https://allen1821.github.io/chronobear/status.html)**: Check the current status of the bot, including uptime and activity.
-5. **[About Me](https://allen1821.github.io/chronobear/aboutme.html)**: Information about the creator and contributors of Chronobear.
+1. **[Home](https://allen1821.github.io/chronobear/index.html)**: Current Chronobear feature overview and invite link.
+2. **[Commands](https://allen1821.github.io/chronobear/commands.html)**: Current slash commands with user and bot permission notes.
+3. **[Support](https://allen1821.github.io/chronobear/support.html)**: Support guidance and `/help` direction.
+4. **[Status](https://allen1821.github.io/chronobear/status.html)**: Static status notes until a live status API exists.
+5. **[About Me](https://allen1821.github.io/chronobear/aboutme.html)**: Creator and contributor credits.
 
 ## Technologies Used
 
-- **HTML** and **CSS**: For the website’s structure and styling.
-- **JavaScript**: For interactivity and dynamic features.
-- **Discord API**: To connect with Discord servers and track user activity.
+- **HTML** and **CSS** for the static website.
+- **JavaScript** for command list reveal interactions.
+- **Discord API** for bot commands and voice activity tracking.
 
-## How to Use
+## Invite Permissions
 
-1. Visit the [Chronobear website](https://allen1821.github.io/chronobear/index.html).
-2. Invite the **Chronobear** bot to your Discord server via the link provided.
-3. Use the commands listed on the **Commands** page to interact with the bot.
-4. Check the **Status** page to ensure the bot is running smoothly.
-
-
-
-
+The website invite URL no longer requests Administrator. It uses `permissions=84992`, which covers View Channels, Send Messages, Embed Links, and Read Message History. Server management commands should still be restricted inside Discord to users with Manage Server.

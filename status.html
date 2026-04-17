@@ -3,36 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chronobear health</title>
+    <title>Chronobear Status</title>
+    <link rel="icon" href="images/Chronobear.png">
     <link rel="stylesheet" href="stylesstatus.css">
-    <script src="status.js" defer></script> <!-- Add this line to link the JavaScript file -->
 </head>
 <body>
+    <header class="site-header">
+        <nav class="nav-shell" aria-label="Main navigation">
+            <a class="brand" href="index.html">
+                <img src="images/Chronobear.png" alt="Chronobear logo">
+                <span>Chronobear</span>
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="commands.html">Commands</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="status.html" aria-current="page">Status</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="commands.html">Commands</a></li>
-            <li><a href="support.html">Support</a></li>
-            <li><a href="status.html">Status</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-        </ul>
-    </nav>
+    <main class="status-page">
+        <section class="status-hero">
+            <p class="eyebrow">Static status page</p>
+            <h1>Chronobear status</h1>
+            <p>This page is not connected to a live status API yet. Use the Support page or Discord command help if Chronobear is not responding.</p>
+        </section>
 
-    <!-- Status Section -->
-    <div class="content">
-        <h1>Chronobear health</h1>
-        <h2>Chronobear Status</h2>
-        <p>The current status of Time Bot is: <strong id="bot-status">Loading...</strong>.</p> <!-- Dynamic status -->
-        <p>All systems are operational. If you experience any issues, please check our <a href="support.html" style="color: #4f8cc9;">Support</a> page for assistance.</p>
-    </div>
+        <section class="status-panel" aria-label="Current status notes">
+            <div>
+                <span class="status-dot" aria-hidden="true"></span>
+                <h2>Public status feed</h2>
+                <p>Not configured</p>
+            </div>
+            <div>
+                <span class="status-dot muted" aria-hidden="true"></span>
+                <h2>Bot checks</h2>
+                <p>Use /help in Discord</p>
+            </div>
+            <div>
+                <span class="status-dot muted" aria-hidden="true"></span>
+                <h2>Commands</h2>
+                <p>19 slash commands</p>
+            </div>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Chronobear. All rights reserved.</p>
+        <p>&copy; 2026 Chronobear. All rights reserved.</p>
     </footer>
-
-
 </body>
 </html>
